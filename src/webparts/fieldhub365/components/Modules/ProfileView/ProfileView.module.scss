@@ -1,0 +1,280 @@
+.profileContainer {
+  padding-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.profileBanner {
+  background: #fff;
+  padding: 40px 0px;
+  border-radius: 0px 0px 55px 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.profileBanner h2 {
+  margin: 0px;
+  text-align: center;
+}
+
+/* HEADER */
+
+.profileHeader {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 0 0 60px 60px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+}
+
+.settingsBtn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  button {
+    padding: 10px;
+    background: #f3f4f6;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    color: #bbb;
+    display: none;
+  }
+}
+
+.avatarWrapper {
+  position: relative;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.avatar {
+  width: 112px;
+  height: 112px;
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.08);
+  border: 8px solid #eef2ff;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.statusIndicator {
+  position: absolute;
+  bottom: 6px;
+  right: 38%;
+  width: 20px;
+  height: 20px;
+  background: #10b981;
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.roleBadge {
+  margin: 10px auto 20px;
+  padding: 6px 12px;
+  font-size: 10px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: rgba(91, 95, 199, 0.1);
+  color: #5b5fc7;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.miniBadges {
+  display: flex;
+  gap: 12px;
+  padding: 0px 24px;
+}
+
+.miniBadge {
+  flex: 1;
+  padding: 12px;
+  border-radius: 20px;
+  border: 1px solid #eee;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.miniValue {
+  font-weight: 900;
+  font-size: 14px;
+  margin: 0;
+  color: #000;
+}
+
+.miniLabel {
+  font-size: 9px;
+  text-transform: uppercase;
+  color: #94a3b8;
+  margin: 0;
+  font-weight: 900;
+}
+
+.amber {
+  color: #f59e0b;
+}
+.indigo {
+  color: #5b5fc7;
+}
+.purple {
+  color: #8b5cf6;
+}
+
+/* SECTION */
+
+.section {
+  padding: 0 24px;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* IMPACT GRID */
+
+.impactGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.impactTile {
+  background: white;
+  padding: 20px;
+  border-radius: 24px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.impactIcon {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  opacity: 0.6;
+}
+
+.impactLabel {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #589dee;
+  font-weight: 800;
+  margin: 0px;
+}
+
+.impactBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 0px;
+}
+
+.impactBottom h4 {
+  font-size: 22px;
+  font-weight: 900;
+  margin: 0px;
+}
+
+.trend {
+  display: none;
+  font-size: 10px;
+  background: #e6f9f0;
+  color: #10b981;
+  padding: 4px 6px;
+  border-radius: 8px;
+  font-weight: 800;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skillPill {
+  padding: 7px 15px;
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #666;
+  transition: 0.2s ease;
+
+  &:hover {
+    border-color: #5b5fc7;
+    color: #5b5fc7;
+  }
+}
+
+/* INFO */
+
+.infoCard {
+  background: white;
+  border-radius: 32px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+}
+
+.infoRow {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  gap: 16px;
+  cursor: pointer;
+  transition: 0.2s ease;
+
+  &:hover {
+    background: #f8f9fb;
+  }
+}
+
+.infoRow .infoIcon {
+  display: flex;
+}
+.infoRow .infoContent {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 90%;
+}
+
+.infoLabel {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #a0a9b3;
+  font-weight: 800;
+  margin: 0;
+}
+
+.infoValue {
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+  display: inline-block;
+  max-width: 280px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

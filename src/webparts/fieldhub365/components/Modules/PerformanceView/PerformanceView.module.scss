@@ -1,0 +1,208 @@
+.performanceContainer {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.performanceHeader {
+  h2 {
+    font-size: 22px;
+    font-weight: 800;
+    color: #242424;
+    margin: 0px;
+  }
+
+  p {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 0px;
+  }
+}
+
+/* HERO CARD */
+
+.heroCard {
+  padding: 32px;
+  border-radius: 40px;
+  background: linear-gradient(135deg, #5b5fc7, #464775);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 20px 40px rgba(91, 95, 199, 0.2);
+}
+
+.heroLabel {
+  font-size: 11px;
+  text-transform: uppercase;
+  opacity: 0.7;
+  font-weight: 800;
+}
+
+.heroValue {
+  font-size: 40px;
+  font-weight: 900;
+  margin: 6px 0;
+}
+
+.heroTrend {
+  font-size: 12px;
+  font-weight: 700;
+  color: #9ef7b9;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.heroIcon {
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+}
+
+/* GENERAL CARD */
+
+.card {
+  background: white;
+  padding: 28px;
+  border-radius: 40px;
+  border: 1px solid #f1f1f1;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.cusCardTitle {
+  margin-bottom: 24px;
+  font-weight: 800;
+}
+
+.iconBox {
+  width: 32px;
+  height: 32px;
+  background: #f3f4f6;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chartContainer {
+  width: 100%;
+  height: 250px;
+}
+
+/* PIE SECTION */
+
+.pieWrapper {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.pieChart {
+  width: 130px;
+  height: 130px;
+}
+
+.legend {
+  flex: 1;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-bottom: 12px;
+  color: #555;
+}
+
+.legendDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+/* ACHIEVEMENT */
+
+.achievementCard {
+  position: relative;
+}
+
+.achievementHeader {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+
+  h3 {
+    font-weight: 800;
+    color: #242424;
+  }
+
+  p {
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #999;
+    font-weight: 700;
+  }
+}
+
+.achievementIcon {
+  width: 56px;
+  height: 56px;
+  background: rgba(91, 95, 199, 0.1);
+  color: #5b5fc7;
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progressSection {
+  margin-bottom: 16px;
+}
+
+.progressLabel {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.xp {
+  color: #5b5fc7;
+}
+
+.progressBar {
+  height: 10px;
+  background: #f1f1f1;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  width: 75%;
+  background: linear-gradient(90deg, #5b5fc7, #7b7ec4);
+  border-radius: 20px;
+}
+
+.achievementText {
+  font-size: 12px;
+  color: #666;
+
+  span {
+    color: #5b5fc7;
+    font-weight: 700;
+  }
+}

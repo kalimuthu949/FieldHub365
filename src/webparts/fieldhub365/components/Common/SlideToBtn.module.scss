@@ -1,0 +1,95 @@
+:root {
+  --accent: #5958ff;
+  --success: #15b46b;
+  --delay: 0.1s;
+}
+
+.button {
+  --swiped: 0;
+  --swiped-blur: 0;
+  --padding: 5px;
+
+  position: relative;
+  height: 22px;
+  aspect-ratio: 4/1;
+  border: none;
+}
+
+.inner {
+  position: absolute;
+  inset: 0;
+  background-color: #5b5fc7;
+  color: #fff;
+  display: flex;
+  border-radius: 50px;
+  align-items: center;
+  transform: translateY(calc(var(--swiped) * -10px));
+  clip-path: inset(0 calc(75px * var(--swiped)) round 50px);
+  padding: 5px 5px 5px 10px;
+  transition:
+    transform 0.3s,
+    clip-path 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) var(--delay);
+}
+
+.inner::before {
+  content: "Slide to start  ";
+  margin: 0 10px 0 auto;
+  opacity: calc(1 - var(--swiped-blur));
+  filter: blur(calc(var(--swiped-blur) * 10px));
+  font-size: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.inner::after {
+  content: "✓";
+  position: absolute;
+  width: calc(50px - var(--padding) * 1.5);
+  height: calc(50px - var(--padding) * 1.5);
+  left: 50%;
+  transform: translateX(-50%) scale(var(--swiped));
+  border-radius: 50%;
+  background-color: var(--success);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4em;
+  transition: transform 0.3s var(--delay);
+}
+
+.swipeBtn {
+  position: absolute;
+  //   height: calc(100% - var(--padding) * 2);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  //   background:
+  //     radial-gradient(circle 20px, rgba(255 255 255 / 0.5), transparent),
+  //     linear-gradient(var(--accent), var(--accent));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  color: white;
+  font-size: 11px;
+  cursor: pointer;
+  margin-bottom: 1px;
+}
+
+.button::after {
+  content: "Order Successful";
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--success);
+  top: calc(100% + var(--padding) + ((1 - var(--swiped)) * -5px));
+  opacity: var(--swiped);
+  transition:
+    top 0.3s,
+    opacity 0.3s;
+  transition-delay: var(--delay);
+}
+
+.order {
+  --swiped: 1;
+}

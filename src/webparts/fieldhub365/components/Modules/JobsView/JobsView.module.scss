@@ -1,0 +1,232 @@
+.todayjob_container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+}
+.jobsHeader h2 {
+  font-size: 22px;
+  font-weight: 800;
+  color: #242424;
+  margin: 0px;
+}
+
+.jobsHeader p {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 0px;
+}
+
+.metricsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.metricCard {
+  padding: 16px;
+  border-radius: 20px;
+  background: #eef1f6;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.active {
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.metricIcon {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  opacity: 0.5;
+  transform: scale(2.5);
+}
+
+.active .metricIcon {
+  opacity: 1;
+}
+
+.metricCount {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.metricLabel {
+  font-size: 11px;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
+.searchContainer {
+  position: relative;
+}
+
+.searchContainer input {
+  width: 100%;
+  padding: 15px 48px 15px 56px;
+  background: #ffffff;
+  border: 1px solid #f1f5f9;
+  border-radius: 16px;
+  font-size: 14px;
+  // font-weight: 700;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  outline: none;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+  &:focus {
+    border-color: #5b5fc770;
+    box-shadow: 0 0 0 2px rgba(91, 95, 199, 0.1);
+  }
+}
+
+.searchIcon {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #94a3b8;
+}
+
+.taskHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.taskHeader h3 {
+  margin: 0px;
+}
+
+.inventoryBtn {
+  font-size: 12px;
+  font-weight: 700;
+  background: #eef0ff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #5b5fc7;
+  display: flex;
+  gap: 4px;
+}
+
+.jobViewCard {
+  position: relative;
+  background: #fff;
+  padding: 16px 16px 16px 32px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  margin-top: 14px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.04);
+}
+
+.statusBar {
+  margin: 20px 0px;
+  width: 4px;
+  position: absolute;
+  left: 16px;
+  top: 0;
+  bottom: 0;
+  border-radius: 18px;
+}
+
+.statusCompleted {
+  background: #10b981;
+}
+
+.statusProgress {
+  background: #f5a623;
+}
+
+.statusDefault {
+  background: #ec2f2f;
+}
+
+.jobContent {
+  flex: 1;
+}
+
+.jobContent h4 {
+  font-size: 14px;
+  margin: 8px 0px;
+  color: #2e3055;
+}
+
+.jobTop {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.viewJobId {
+  font-size: 10px;
+  font-weight: 700;
+  color: #6366f1;
+  display: flex;
+  align-items: center;
+}
+
+.viewPriorityBadge {
+  font-size: 9px;
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.priorityHigh {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.priorityMedium {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.priorityLow {
+  background: #f1f5f9;
+  color: #64748b;
+}
+
+.jobMeta {
+  display: flex;
+  gap: 8px;
+  font-size: 11px;
+  opacity: 0.6;
+}
+
+.jobMeta span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.jobArrow {
+  background: #f3f4f6;
+  padding: 8px;
+  border-radius: 12px;
+  display: flex;
+}
+
+.viewMore {
+  width: 100%;
+  margin-top: 14px;
+  padding: 12px;
+  border: none;
+  background: transparent;
+  font-size: 11px;
+  font-weight: 700;
+  color: #999;
+  cursor: pointer;
+}
